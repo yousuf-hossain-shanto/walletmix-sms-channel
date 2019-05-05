@@ -105,5 +105,3 @@ class User extends Authenticatable
 }
 ```
 
-
-[reference]: Laravel Notifications
