@@ -17,7 +17,7 @@ Next, you will need to add a few configuration options to your **config/services
   'sms' => [
     'username'  => env('WALLETMIX_SMS_USERNAME'),
     'password'  => env('WALLETMIX_SMS_PASSWORD'),
-    'from' 		=> env('WALLETMIX_SMS_FROM') // SMS Mask
+    'from' 	=> env('WALLETMIX_SMS_FROM') // SMS Mask
   ]
 ]
 ```
