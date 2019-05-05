@@ -1,9 +1,14 @@
 # Walletmix Sms Channel
 
 #### Prerequisites
+Before start, you must know about Laravel Notifications. You can check here..
+https://laravel.com/docs/5.8/notifications
+
 Before you can send notifications via **Walletmix**, you need to install the **yhshanto/walletmix-sms-channel** Composer package:
 
-```composer require yhshanto/walletmix-sms-channel```
+```
+composer require yhshanto/walletmix-sms-channel
+```
 
 Next, you will need to add a few configuration options to your **config/services.php** configuration file. You may copy the example configuration below to get started:
 
@@ -99,3 +104,6 @@ class User extends Authenticatable
     }
 }
 ```
+
+
+[reference]: Laravel Notifications
