@@ -1,0 +1,29 @@
+{
+    "name": "yhshanto/walletmix-sms-channel",
+    "description": "Walletmix Notification Channel for laravel.",
+    "keywords": ["laravel", "notifications", "walletmix"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yousuf Hossain",
+            "email": "yousuf.hossain.shanto@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/notifications": "~5.8.0|~5.9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "YHShanto\\WalletmixSMS\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YHShanto\\WalletmixSMS\\WalletmixSmsChannelServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
