@@ -34,7 +34,10 @@ class WalletmixSmsChannel
     public function send($notifiable, $notification)
     {
 
-        if (! $to = ($notifiable->routeNotificationFor('walletmix', $notification) || $notifiable->phone)) {
+        $to = $notifiable->routeNotificationFor('walletmix', $notification);
+        $to = $to?$to:$notifiable->phone;
+        
+        if (! $to) {
             return;
         }
 
